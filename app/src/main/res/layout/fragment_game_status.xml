@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.GameStatus"
+    android:layout_gravity="center"
+    >
+    <TextView
+        android:id="@+id/gameStatusMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Its a draw"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:layout_below="@id/gameStatusMessage"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/quitGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quit Game"
+        android:layout_below="@id/gameStatusMessage"
+        android:layout_toRightOf="@id/playAgain"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"/>
+</RelativeLayout>
